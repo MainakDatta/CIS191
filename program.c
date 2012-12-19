@@ -4,7 +4,13 @@
 #include <unistd.h>
 #include <string.h>
 
-int main(int argc, char** argv) {
+
+/* This program filters an argument list by removing any strings matching
+ * the first argument
+ */
+
+int main(int argc, char **argv) {
+  /* The element at argv[1] is the string to remove, if present */
   int i = 1;
   
   /* If no arguments are given, complain and exit. */
